@@ -6,8 +6,6 @@ let aboutPage = document.querySelector(".about");
 let contactus = document.querySelector(".contact");
 
 
-
-
 function home() {
    mainPage.style.display = "flex";
    cardMen.style.display = "block";
@@ -20,10 +18,6 @@ function home() {
    document.getElementById("home").style.color = "rgb(1, 190, 190)";
    document.getElementById("about").style.color = "black";
    document.getElementById("contact").style.color="black";
-
-
-
-
 
 }
 
@@ -41,7 +35,6 @@ function shop() {
    document.getElementById("shop").style.color = "rgb(1, 190, 190)"
    document.getElementById("home").style.color = "black"
    document.getElementById("contact").style.color="black";
-
 
 }
 
@@ -61,10 +54,6 @@ function blog() {
    document.getElementById("about").style.color = "black";
    document.getElementById("contact").style.color="black";
 
-
-
-
-
 }
 
 
@@ -81,7 +70,6 @@ function about() {
    document.getElementById("shop").style.color = "black";
    document.getElementById("about").style.color = "rgb(1, 190, 190)"
    document.getElementById("contact").style.color="black";
-
 
 }
 
@@ -112,8 +100,6 @@ function showCard(img){
    mainPage.style.display = "none";
    blogContent.style.display = "none"
 
-
-
 }
 
 // Add to Cart
@@ -126,10 +112,6 @@ function addItem(){
    cardgirl.style.display = "none";
    mainPage.style.display = "none";
    blogContent.style.display = "none"
-
- 
-
-
 
 }
  
