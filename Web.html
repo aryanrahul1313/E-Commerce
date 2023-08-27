@@ -1,60 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="Web.css">
+    <title>E-commerce</title>
     <script src="https://kit.fontawesome.com/f30fac2c61.js" crossorigin="anonymous"></script>
     <link
-        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Catamaran:wght@200&family=Courgette&family=Edu+TAS+Beginner:wght@700&family=Lato:wght@300;900&family=Mukta:wght@700&family=Mulish:wght@300&family=Open+Sans&family=PT+Sans:ital,wght@1,700&family=Poppins:wght@300&family=Raleway:wght@100&family=Roboto&family=Roboto+Condensed:wght@700&family=Roboto+Slab&display=swap"
-        rel="stylesheet">
+        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Catamaran:wght@200&family=Courgette&family=Edu+TAS+Beginner:wght@700&family=Lato:wght@300;900&family=Mukta:wght@700&family=Mulish:wght@300&family=Open+Sans&family=PT+Sans:ital,wght@1,700&family=Poppins:wght@300&family=Raleway:wght@100&family=Roboto&family=Roboto+Condensed:wght@700&family=Roboto+Slab&display=swap" rel="stylesheet">
 </head>
-
 <body>
     <div class="container">
         <nav>
             <div class="logo">
-                <h1>Trends</h1>
+                <h1>BeInTrend</h1>
+                <ul>
+                    <li>
+                        <a id="home" onclick="homes()">Home</a>
+                        <a id="shop" onclick="shops()">Shops</a>
+                        <a id="blog" onclick="blogs()">Blog</a>
+                        <a id="about" onclick="abouts()">About</a>
+                        <a id="contact" onclick="contacts()">Contact</a>
+                        <i class="fa-sharp fa-solid fa-cart-shopping"></i>
+                    </li>
+                </ul>
             </div>
-            <ul>
-                <li>
-                    <a id="home" onclick="homes()">Home</a>
-                    <a id="shop" onclick="shops()">Shops</a>
-                    <a id="blog" onclick="blogs()">Blog</a>
-                    <a id="about" onclick="abouts()">About</a>
-                    <a id="contact" onclick="contacts()">Contact</a>
-                    <i class="fa-sharp fa-solid fa-cart-shopping"></i>
-
-                </li>
-            </ul>
         </nav>
 
         <!-- mainpage -->
 
         <div class="main">
             <div class="mainText">
-                <h2>Trends</h2>
+                <h2>BeInTrend...</h2>
                 <h1 class="top">Super Value Deals</h1>
                 <h1>On All Products</h1>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi</p>
+                <p>Get trendy with us...</p>
                 <button>Explore</button>
             </div>
             <img src="m3.png" alt="">
         </div>
 
-        <!-- cards -->
+        <!-- Men's cards -->
 
         <div class="trend">
             <div class="head">
-                <h1>Trends <span>Men's Wear</span></h1>
+                <h1>BeInTrend <span>Men's Wear</span></h1>
             </div>
             <div class="card">
                 <div class="crd">
                     <img src="srt1.webp" alt="" onclick="show(this)">
                     <div class="crdText">
-                        <h2>Cutton Trending Shirt's</h2>
+                        <h2>Cotton Trending Shirt's</h2>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
@@ -62,12 +57,12 @@
                         <i class="fa-solid fa-star-half-stroke"></i> <br>
                         <button>Add to Cart</button>
                     </div>
-                 </div>
+                </div>
 
-                 <div class="crd">
+                <div class="crd">
                     <img src="srt2.webp" alt="" onclick="show(this)">
                     <div class="crdText">
-                        <h2>Cutton Trending Shirt's</h2>
+                        <h2>Cotton Trending Shirt's</h2>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
@@ -75,222 +70,217 @@
                         <i class="fa-solid fa-star-half-stroke"></i> <br>
                         <button>Add to Cart</button>
                     </div>
-                 </div>
-                    <div class="crd">
-                        <img src="srt6.webp" alt="" onclick="show(this)">
-                        <div class="crdText">
-                            <h2>Cutton Trending Shirt's</h2>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star-half-stroke"></i> <br>
-                            <button>Add to Cart</button>
-                        </div>
+                </div>
+
+                <div class="crd">
+                    <img src="srt6.webp" alt="" onclick="show(this)">
+                    <div class="crdText">
+                        <h2>Cotton Trending Shirt's</h2>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i> <br>
+                        <button>Add to Cart</button>
                     </div>
                 </div>
             </div>
+        </div>
 
-                <!-- Women Card -->
+        <!-- Women Card -->
 
-                <div class="trend" id="trendSec">
-                    <div class="head">
-                        <h1>Trends <span>Women's Wear</span></h1>
-                    </div>
-                    <div class="card">
-                        <div class="crd">
-                            <img src="wn4.webp" alt="" onclick="show(this)">
-                            <div class="crdText">
-                                <h2>Trending Girl Top's</h2>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star-half-stroke"></i> <br>
-                            <button>Add to Cart</button>
-                            </div>
-                        </div>
-
-                        <div class="crd">
-                            <img src="wn5.webp" alt="" onclick="show(this)">
-                            <div class="crdText">
-                                <h2>Trending Girl Top's</h2>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star-half-stroke"></i> <br>
-                            <button>Add to Cart</button>
-                            </div>
-                        </div>
-
-                        <div class="crd">
-                            <img src="wn6.webp" alt="" onclick="show(this)">
-                            <div class="crdText">
-                                <h2>Trending Girl Top's</h2>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star-half-stroke"></i> <br>
-                            <button>Add to Cart</button>
-                            </div>
-                        </div>
+        <div class="trend" id="trendSec">
+            <div class="head">
+                <h1>BeInTrend <span>Women's Wear</span></h1>
+            </div>
+            <div class="card">
+                <div class="crd">
+                    <img src="wn4.webp" alt="" onclick="show(this)">
+                    <div class="crdText">
+                        <h2>Trending Girl's Dress</h2>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i> <br>
+                    <button>Add to Cart</button>
                     </div>
                 </div>
 
-
-                <!-- about us -->
-
-                <div class="about">
-
-                    <div class="aboutus">
-                        <h1>#KnowUs</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </div>
-
-                    <div class="me">
-                        <img src="lap.png" alt="">
-                        <div class="aboutText">
-                            <h1>Who we are ?</h1>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing Dolorum corrupti consequuntur sunt ipsam aperiam vel magni sequi eos sit amet consectetur adipisicing Dolorum corrupti consequuntur sunt ipsam aperiam vel magni sequi eos atque nam maxime dolorem fuga, rem eum iure quidem! Illo corporis, asperiores ipsum excepturi voluptates necessitatibus consectetur odit omnis hic praesentium autem, officiis dignissimos assumenda saepe.</p>
-                        </div>
+                <div class="crd">
+                    <img src="wn5.webp" alt="" onclick="show(this)">
+                    <div class="crdText">
+                        <h2>Trending Girl's Dress</h2>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i> <br>
+                    <button>Add to Cart</button>
                     </div>
                 </div>
 
-                <!-- contact -->
-
-                <div class="contact">
-
-                    <div class="contactus">
-                        <h1>#Let's Connect</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </div>
-
-                    <div class="contactMe">
-                        <div class="contactText">
-                            <h1>Visit Our Office or Contact <br>
-                                Us Today</h1>
-                            <p>Address : Dablin Park, England, New york.</p>
-                            <p>Contact : dumiemail@gmail.com</p>
-                            <p>Number : 999999000011</p>
-                        </div>
-                        <img src="map.PNG" alt="">
-                    </div>
-
-                    <div class="form">
-                        <h1>Connect with Us. Fill Form</h1>
-                        <input type="text" placeholder="Enter Email"> <br>
-                        <input type="text" placeholder="Enter Email"> <br>
-                        <input type="text" placeholder="Enter Email"> <br>
-                        <input type="text" placeholder="Enter Email"> <br>
-                        <input type="text" placeholder="Enter Email"> <br>
-                        <button>Submit</button>
-
-                    </div>
-                </div>
-                 <!-- cart -->
-
-                 <div class="cart">
-                    <img id="newImg" src="" alt="">
-                    <div class="cartText">
-                        <h1>Trends Offer : Trending Shop <br>
-                            Now</h1>
-                            <h2>Special Price</h2>
-                            <h2>$11</h2>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
-                           <div class="btn">
-                            <button>Buy Now</button>
-                            <button onclick="addCart()">Add to Cart</button>
-                           </div>
-                           <button  class="back">Back</button>
-
-
-
-                    </div>
-                 </div>
-
-                <!-- blogs -->
-                <div class="trends">
-                    <div class="head">
-                        <h1>Trends <span>Men's Wear</span></h1>
-                    </div>
-                    <div class="card">
-                        <div class="blog">
-                            <img src="tr1.webp" alt="">
-                            <div class="blogText">
-                                <h2>Trending Girl Cloths</h2>
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem, animi expedita?</p>
-                                <a href="https://influencermarketinghub.com/best-fashion-blogs/">Read More</a>
-                            </div>
-                        </div>
-
-                        <div class="blog">
-                            <img src="tr3.webp" alt="">
-                            <div class="blogText">
-                                <h2>Trending Boys Cloths</h2>
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem, animi expedita?</p>
-                                <a href="https://www.apetogentleman.com/">Read More</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Letter -->
-
-                <div class="letter">
-                    <div class="letterText">
-                        <h1>Sign Up for NewsLetter</h1>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-                    </div>
-                    <div class="inp">
-                        <input type="text" placeholder="Enter Email">
-                        <button>Sign Up</button>
-                    </div>
-                </div>
-
-                <!-- Footer -->
-
-                <div class="footer">
-                    <div class="footerText">
-                        <h2>Trends</h2>
-                        <p>Service </p>
-                        <p>Customer</p>
-                        <p>Satisfaction</p>
-                        <p></p>
-
-                    </div>
-                    <div class="footerText">
-                        <h2>About US</h2>
-                        <p>Adrress : Lorem ipsum dolor sit amet, <br>
-                            consectetur adipisicing <br>
-                            Perferendis, excepturi alias.</p>
-                        <p>Service</p>
-                        <p>Customer</p>
-                        <p>Satisfation</p>
-
-                    </div>
-                    <div class="footerText">
-                        <h2>Contect</h2>
-                        <p>9989003229</p>
-                        <p>Customer</p>
-                        <p>Comming up</p>
-                        <p>New Arrival</p>
-
-                    </div>
-                    <div class="footerText">
-                        <h2>Trending</h2>
-                        <p>Service</p>
-                        <p>Customer</p>
-                        <p>Shops</p>
-                        <p></p>
-
+                <div class="crd">
+                    <img src="wn6.webp" alt="" onclick="show(this)">
+                    <div class="crdText">
+                        <h2>Trending Girl's Dress</h2>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i> <br>
+                    <button>Add to Cart</button>
                     </div>
                 </div>
             </div>
-            <script src="Web.js"></script>
+        </div>
+
+        <!-- about us -->
+
+        <div class="about">
+            <div class="aboutus">
+                <h1>#KnowUs</h1>
+                <p>wanna explore us...</p>
+            </div>
+
+            <div class="me">
+                <img src="lap.png" alt="">
+                <div class="aboutText">
+                    <h1>Who we are ?</h1>
+                    <p>Welcome to BeInTrend, where style meets inspiration. We're your ultimate destination for all things fashion. From trend forecasts and outfit ideas to beauty tips and expert interviews, we're here to ignite your creativity and elevate your fashion game. Our passion for fashion drives us to curate a space that celebrates individuality, self-expression, and the ever-evolving world of style. Join us on this sartorial journey as we navigate the exciting realms of couture and everyday chic. Discover the essence of who we are, and let's embark on a stylish adventure together.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- contact -->
+
+        <div class="contact">
+            <div class="contactus">
+                <h1>#Let's Connect</h1>
+                <p>Feel free to contact</p>
+            </div>
+
+            <div class="contactMe">
+                <div class="contactText">
+                    <h1>Visit Our Office or Contact <br>
+                        Us Today</h1>
+                    <p>Address : BHU road, Lanka, Varanasi, UP</p>
+                    <p>Contact : beintrend13@gmail.com</p>
+                    <p>Number : 6392844894</p>
+                </div>
+                <img src="map.PNG" alt="">
+            </div>
+
+            <div class="form">
+                <h1>Connect with Us. Fill Form</h1>
+                <input type="text" placeholder="Enter Email"> <br>
+                <input type="text" placeholder="Enter Email"> <br>
+                <input type="text" placeholder="Enter Email"> <br>
+                <input type="text" placeholder="Enter Email"> <br>
+                <input type="text" placeholder="Enter Email"> <br>
+                <button>Submit</button>
+            </div>
+        </div>
+
+         <!-- cart -->
+
+         <div class="cart">
+            <img id="newImg" src="" alt="">
+            <div class="cartText">
+                <h1>BeInTrend Offer : Trending Shop <br>
+                    Now</h1>
+                    <h2>Special Price</h2>
+                    <h2>$11</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+                   <div class="btn">
+                    <button>Buy Now</button>
+                    <button onclick="addCart()">Add to Cart</button>
+                   </div>
+                   <button  class="back">Back</button>
+
+
+
+            </div>
+         </div>
+
+        <!-- blogs -->
+        <div class="trends">
+            <div class="head">
+                <h1>Trends <span>Men's Wear</span></h1>
+            </div>
+            <div class="card">
+                <div class="blog">
+                    <img src="tr1.webp" alt="">
+                    <div class="blogText">
+                        <h2>Trending Girl Clothes</h2>
+                        <p>The world of women's fashion is a canvas of creativity, offering an array of styles that allow for self-expression like no other.</p>
+                        <a href="https://influencermarketinghub.com/best-fashion-blogs/">Read More<a>
+                    </div>
+                </div>
+
+                <div class="blog">
+                    <img src="tr3.webp" alt="">
+                    <div class="blogText">
+                        <h2>Trending Boys Clothes</h2>
+                        <p>In the world of fashion, men's style has always been about combining classic elegance with contemporary trends.</p>
+                        <a href="https://www.apetogentleman.com/">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Letter -->
+
+        <div class="letter">
+            <div class="letterText">
+                <h1>Sign Up for NewsLetter</h1>
+                <p>Elevate your fashion quotient with our newsletter. Get fashion inspiration, insider insights, and more<br>subscribe now and never miss a style beat</p>
+            </div>
+            <div class="inp">
+                <input type="text" placeholder="Enter Email">
+                <button>Sign Up</button> 
+            </div>
+        </div>
+
+        <!-- Footer -->
+
+        <div class="footer">
+            <div class="footerText">
+                <h2>BeInTrend</h2>
+                <p>Service </p>
+                <p>Customer</p>
+                <p>Satisfaction</p>
+                <p></p>
+
+            </div>
+            <div class="footerText">
+                <h2>About US</h2>
+                <p>Adrress : BHU road, Lanka, Varanasi <br>
+                    Uttar Pradesh</p>
+                <p>Service</p>
+                <p>Customer</p>
+                <p>Satisfation</p>
+
+            </div>
+            <div class="footerText">
+                <h2>Contact</h2>
+                <p>6392844894</p>
+                <p>Customer</p>
+                <p>Comming up</p>
+                <p>New Arrival</p>
+
+            </div>
+            <div class="footerText">
+                <h2>Trending</h2>
+                <p>Service</p>
+                <p>Customer</p>
+                <p>Shops</p>
+                <p></p>
+            </div>
+        </div>
+    </div>
+    <script src="web.js"></script>
 </body>
-
 </html>
